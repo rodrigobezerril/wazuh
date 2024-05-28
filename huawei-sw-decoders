@@ -1,4 +1,4 @@
-<!-- Decoder to Switchs Huawei -->
+<!-- Decoder to Huawei Switchs -->
 
 <!-- Huawei examples log
 May  7 2024 14:20:03 SW055 %%01SNMP/4/SNMP_FAIL(s)[58]:Failed to login through SNMP. (Ip=10.24.16.103, Times=2, Reason=the community was incorrect, VPN= )
