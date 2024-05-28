@@ -1,3 +1,12 @@
+<!-- Decoder to Switchs Huawei -->
+
+<!-- Huawei examples log
+May  7 2024 14:20:03 SW055 %%01SNMP/4/SNMP_FAIL(s)[58]:Failed to login through SNMP. (Ip=10.24.16.103, Times=2, Reason=the community was incorrect, VPN= )
+May  7 2024 14:14:53 SW055 %%01MSTP/6/SET_PORT_FORWARDING(l)[44]:In MSTP process 0 instance 0, MSTP set port GigabitEthernet0/0/13 state as forwarding.
+May 7 2024 13:43:15 SW055 %%01SSH/4/SSH_FAIL(s)[49]:Failed to login through SSH. (IP=10.24.186.20, VpnInstanceName= , UserName=admin, Times=2, FailedReason=User password authentication failed)
+
+-->
+
 <decoder name="sw_huawei">
     <prematch>%%01</prematch>
 </decoder>
