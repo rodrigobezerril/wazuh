@@ -1,0 +1,42 @@
+<decoder name="hp-sw">
+    <prematch>%%10</prematch>
+</decoder>
+
+<decoder name="hp-sw-fields">
+    <parent>hp-sw</parent>
+    <regex>(\w\w\d\d\d)</regex>
+    <order>hostname</order>
+</decoder>
+
+<decoder name="hp-sw-fields">
+    <parent>hp-sw</parent>
+    <regex>%%10(\w+)</regex>
+    <order>module_name</order>
+</decoder>
+
+<decoder name="hp-sw-fields">
+    <parent>hp-sw</parent>
+    <regex>/(\d)/</regex>
+    <order>severity</order>
+</decoder>
+
+<decoder name="hp-sw-fields">
+    <parent>hp-sw</parent>
+    <regex>/(\w+):</regex>
+    <order>alias</order>
+</decoder>
+<decoder name="hp-sw-fields">
+    <parent>hp-sw</parent>
+    <regex>;\.+(\d+.\d+.\d+.\d+), |;\.+(\d+.\d+.\d+.\d+)\s</regex>
+    <order>srcip</order>
+</decoder>
+<decoder name="hp-sw-fields">
+    <parent>hp-sw</parent>
+    <regex>port\s(\d+)\s</regex>
+    <order>port</order>
+</decoder>
+<decoder name="hp-sw-fields">
+    <parent>hp-sw</parent>
+    <regex>;(\.+)</regex>
+    <order>description</order>
+</decoder>
