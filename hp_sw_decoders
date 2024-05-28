@@ -1,3 +1,9 @@
+<!-- HP examples log
+May 27 08:52:30 2024 SW001 %%10ARP/6/DUPIFIP: -DevIP=10.24.232.1;  Duplicate address 10.24.227.1 on interface Vlan-interface1212, sourced from 0000-5e00-0111
+May 27 08:57:30 2024 SW001 %%10DHCPS/5/DHCPS_EXTEND_IP: -DevIP=10.24.232.1; Server IP = 10.24.135.1, DHCP client IP = 10.24.135.95, DHCP client hardware address = b025-aa61-82b6, DHCP client lease = 4294967295 seconds.
+May 24 12:21:22 2024 SW001 %%10SSHS/6/SSHS_LOG: -DevIP=10.24.232.1; Authentication failed for admin from 10.24.186.20 port 62520 because of invalid username or wrong password  ssh2.
+
+-->
 <decoder name="hp-sw">
     <prematch>%%10</prematch>
 </decoder>
