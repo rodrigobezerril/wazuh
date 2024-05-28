@@ -1,0 +1,31 @@
+<group name="huawei-sw-rules,">
+  <rule id="100100" level="0">
+    <decoded_as>huawei-sw</decoded_as>
+    <field name="severity">7|6</field>
+    <description>Huawei Switch events</description>
+  </rule>
+  <rule id="100101" level="3">
+    <field name="severity">5</field>
+    <description>$(description)</description>
+  </rule>
+  <rule id="100102" level="4">
+    <field name="severity">4</field>
+    <description>$(description)</description>
+  </rule>
+    <rule id="100103" level="11">
+    <field name="severity">2</field>
+    <description>$(description)</description>
+  </rule>
+  <rule id="100104" level="12">
+    <field name="severity">2</field>
+    <description>$(description)</description>
+  </rule>
+  <rule id="100105" level="13">
+    <field name="severity">1</field>
+    <description>$(description)</description>
+  </rule>
+  <rule id="100106" level="14">
+    <field name="severity">0</field>
+    <description>$(description)</description>
+  </rule>
+</group>
