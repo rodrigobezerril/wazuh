@@ -1,0 +1,63 @@
+<decoder name="sw_huawei">
+    <prematch>%%01</prematch>
+</decoder>
+
+<decoder name="sw_huawe_fields">
+    <parent>sw_huawei</parent>
+    <regex>\s(\w\w\d\d\d)\s</regex>
+    <order>hostname</order>
+</decoder>
+
+<decoder name="sw_huawe_fields">
+    <parent>sw_huawei</parent>
+    <regex>%%01(\w+)</regex>
+    <order>module_name</order>
+</decoder>
+
+<decoder name="sw_huawe_fields">
+    <parent>sw_huawei</parent>
+    <regex>/(\d+)/</regex>
+    <order>severity</order>
+</decoder>
+
+<decoder name="sw_huawe_fields">
+    <parent>sw_huawei</parent>
+    <regex>/(\w+)\(</regex>
+    <order>alias</order>
+</decoder>
+
+<decoder name="sw_huawe_fields">
+    <parent>sw_huawei</parent>
+    <regex>\((\w)\)</regex>
+    <order>log_flag</order>
+</decoder>
+
+<decoder name="sw_huawe_fields">
+    <parent>sw_huawei</parent>
+    <regex>[(\d+)]</regex>
+    <order>id</order>
+</decoder>
+
+<decoder name="sw_huawe_fields">
+    <parent>sw_huawei</parent>
+    <regex>]:(\.+)\(</regex>
+    <order>description</order>
+</decoder>
+
+<decoder name="sw_huawe_fields">
+    <parent>sw_huawei</parent>
+    <regex>\(IP=(\d+.\d+.\d+.\d+), |\(SourceIP=(\d+.\d+.\d+.\d+),</regex>
+    <order>srcip</order>
+</decoder>
+
+<decoder name="sw_huawe_fields">
+    <parent>sw_huawei</parent>
+    <regex>Username=(\.+),</regex>
+    <order>user</order>
+</decoder>
+
+<decoder name="sw_huawe_fields">
+    <parent>sw_huawei</parent>
+    <regex>FailedReason=(\.+)\)|Reason=(\.+),</regex>
+    <order>reason</order>
+</decoder>
